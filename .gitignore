@@ -1,0 +1,36 @@
+# --- Secrets ---
+# Never commit tokens or keys. Load them from the environment instead.
+.env
+.env.*
+*.key
+secrets.json
+.huggingface/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- Model weights and large artifacts ---
+models/
+*.pth
+*.pt
+*.ckpt
+
+# --- AlphaFold intermediates (regenerable, large) ---
+AF_DATA/
+*.pdb
+*.cif
+*.a3m
+af_csvs/
+result/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
